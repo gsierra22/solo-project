@@ -2,6 +2,20 @@
     text-align: center;
 }
 
-.count{
-    text-align: center;
+.counter{
+    text-align: center  ;
+}
+
+.increase {
+    border-radius: 12px;
+    width: 95px;
+    margin-right: 10px;
+    background-color: green;
+}
+
+.decrease {
+    border-radius: 12px;
+    width: 95px;
+    margin-left: 10px;
+    background-color: red;
 }

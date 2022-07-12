@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'solo-project';
-  count= 0
+  count: number;
+
+  ngOnInit(){
+    this.count=0
+  }
+
+  addCount(){
+    this.count++
+  }
+
+  subtractCount(){
+    this.count--;
+  }
 }
