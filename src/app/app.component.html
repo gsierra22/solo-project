@@ -1,7 +1,11 @@
-<h1 class="app-title">Welcome to the App!</h1>
+<app-header></app-header>
+<app-scores></app-scores>
+<app-player2></app-player2>
 <div class="counter">
 <div class="count">{{count}}</div>
 <br>
 <button class="increase" (click)="addCount()">Add</button>
 <button class="decrease" (click)="subtractCount()">Subtract</button>
 </div>
+
+<router-outlet></router-outlet>
