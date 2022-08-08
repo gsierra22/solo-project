@@ -16,11 +16,13 @@ export class PlayerComponent implements OnInit {
     this.player1 = [
       {
         name: 'GC',
-        position: 'wing'
+        position: 'wing',
+        active: false
       },
       {
         name: 'Al',
-        position: 'Prop'
+        position: 'Prop',
+        active: false
       }
     ]
   }

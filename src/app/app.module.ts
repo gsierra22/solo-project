@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { PlayerComponent } from './player/player.component';
 import { ScoresComponent } from './scores/scores.component';
 import { Player2Component } from './player2/player2.component';
+import { FrontComponent } from './front/front.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { Player2Component } from './player2/player2.component';
     HeaderComponent,
     PlayerComponent,
     ScoresComponent,
-    Player2Component
+    Player2Component,
+    FrontComponent
   ],
   imports: [
     BrowserModule,
