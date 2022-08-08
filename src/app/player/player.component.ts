@@ -1,3 +1,4 @@
+import { Player1 } from './../../models/Player1';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./player.component.scss']
 })
 export class PlayerComponent implements OnInit {
+
+  player1: Player1[];
 
   constructor() { }
 
