@@ -1,1 +1,8 @@
-<p>player2 works!</p>
+<div class="player2">
+    <div class="player" *ngFor="let Player2 of player2; let i = index">
+        <div class="id">{{i}}</div>
+        <div class="name">{{Player2.name}}</div>
+        <div class="position">{{Player2.position}}</div>
+    </div>
+</div>
+

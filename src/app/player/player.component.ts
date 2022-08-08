@@ -13,6 +13,16 @@ export class PlayerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.player1 = [
+      {
+        name: 'GC',
+        position: 'wing'
+      },
+      {
+        name: 'Al',
+        position: 'Prop'
+      }
+    ]
   }
 
 }
