@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TeamName } from 'src/models/TeamName';
 
 @Component({
   selector: 'app-root',
@@ -6,18 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'solo-project';
-  count: number;
 
-  ngOnInit(){
-    this.count=0
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  addCount(){
-    this.count++
-  }
-
-  subtractCount(){
-    this.count--;
-  }
 }

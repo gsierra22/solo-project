@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit } from '@angular/core';
 import { TeamName } from 'src/models/TeamName';
 
 @Component({
@@ -8,9 +9,9 @@ import { TeamName } from 'src/models/TeamName';
 })
 export class FrontComponent implements OnInit {
 
-   team: string;
-
   constructor() { }
+
+  @Input()team: string;
 
   ngOnInit(): void {
     this.team=""
