@@ -2,8 +2,10 @@
     <div class="card-body">
         <h1 class="team">Please enter your team's name</h1>
         <div class="inputdiv">
-            <input type="text" class="input">
-            <button class="teamin" routerLink="/players">Enter</button>
+            <input type="text" class="input"
+            [(ngModel)]="team"
+            (keyup.enter)="addTeam()">
+            <button class="teamin" (click)="addTeam()">Enter</button>
         </div>
     </div>
 </div>

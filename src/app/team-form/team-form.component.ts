@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { TeamName } from 'src/models/TeamName';
+import { NgModel } from '@angular/forms';
 
 @Component({
-  selector: 'app-front',
-  templateUrl: './front.component.html',
-  styleUrls: ['./front.component.scss']
+  selector: 'app-team-form',
+  templateUrl: './team-form.component.html',
+  styleUrls: ['./team-form.component.scss']
 })
-export class FrontComponent implements OnInit {
+export class TeamFormComponent implements OnInit {
 
-   team: string;
+  team: string;
 
   constructor() { }
 
@@ -21,7 +22,7 @@ export class FrontComponent implements OnInit {
         name: this.team
       }
     }
-    console.log(this.team)
+    // this.todoValue = ""
   }
 
 }

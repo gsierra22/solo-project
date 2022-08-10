@@ -1,7 +1,4 @@
 .inputdiv{
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -13,10 +10,17 @@
 }
 
 .card{
-  margin-top: 125px !important;
+  margin-top: 15px !important;
+  margin-bottom: 20px !important;
   background-color: yellow;
   margin: auto;
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
+}
+
+.input{
+    display: block;
+    
+}
+
+.submit{
+    display: block;
 }
