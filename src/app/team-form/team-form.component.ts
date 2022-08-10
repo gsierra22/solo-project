@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TeamName } from 'src/models/TeamName';
 import { NgModel } from '@angular/forms';
+import { Player1 } from 'src/models/Player1';
 
 @Component({
   selector: 'app-team-form',
@@ -9,20 +10,31 @@ import { NgModel } from '@angular/forms';
 })
 export class TeamFormComponent implements OnInit {
 
-  team: string;
+  player1: Player1[];
+  nameValue: string;
+  positionValue: string;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.team=""
-  }
-  addTeam(){
-    if (this.team !==""){
-      const newTeam:  TeamName ={
-        name: this.team
-      }
-    }
-    // this.todoValue = ""
+    this.player1 = [
+    ];
+    this.nameValue="";
+    this.positionValue="";
   }
 
+  addTask(){
+    if (this.nameValue !=="" && this.positionValue !==""){
+      const newPlayer: Player1 = {
+        name: this.nameValue,
+        position: this.positionValue,
+        active: false
+
+      };
+      this.player1.push(newPlayer);
+      console.log(newPlayer)
+    }
+    this.nameValue = "";
+    this.positionValue=""
+  }
 }

@@ -2,11 +2,21 @@
     <div class="card-body">
         <h1 class="team">Please enter your team's name</h1>
         <div class="inputdiv">
-            <input type="text" class="input">
-            <input type="text" class="input">
-            <button class="submit" routerLink="/players">Enter</button>
+            <input type="text" class="input" [(ngModel)]="nameValue">
+            <input type="text" class="input" [(ngModel)]="positionValue">
+            <button class="submit" (click)="addTask()">Enter</button>
         </div>
     </div>
 </div>
 
-<app-player></app-player>
+<div class="player1">
+    <h1 >Welcome</h1>
+        <div class="player-card" *ngFor="let Player1 of player1; let i = index">
+            <div class="info">
+            <div class="name">Name: {{Player1.name}}</div>
+            <div class="position">Position: {{Player1.position}}
+            </div>
+        </div>
+        </div>
+    </div>
+

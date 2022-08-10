@@ -1,6 +1,5 @@
 import { Player1 } from './../../models/Player1';
 import { Component, Input, OnInit } from '@angular/core';
-import { FrontComponent } from '../front/front.component';
 
 @Component({
   selector: 'app-player',
@@ -10,22 +9,30 @@ import { FrontComponent } from '../front/front.component';
 export class PlayerComponent implements OnInit {
 
   player1: Player1[];
+  nameValue: string;
+  positionValue: string;
 
   constructor() { }
 
   ngOnInit(): void {
     this.player1 = [
-      {
-        name: 'GC',
-        position: 'wing',
+    ];
+    this.nameValue="";
+    this.positionValue="";
+  }
+
+  addTask(){
+    if (this.nameValue !=="" && this.positionValue !==""){
+      const newPlayer: Player1 = {
+        name: this.nameValue,
+        position: this.positionValue,
         active: false
-      },
-      {
-        name: 'Al',
-        position: 'Prop',
-        active: false
-      }
-    ]
+
+      };
+      this.player1.push(newPlayer);
+    }
+    this.nameValue = "";
+    this.positionValue=""
   }
 
 }
